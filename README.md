@@ -20,8 +20,8 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
 1. Install Windows Server 2019 by creating a Virtual Machine
 2. Change machine name to
 3. Allocate 
-   \- IP Address 
-       --> This PC --> Properties --> Advanced System Settings --> Computer Name
-   \- DNS Name
-   \-   --> Control Panel --> Network & Internet --> Network and Sharing Center --> Ethernet --> Properties
+   - IP Address 
+   \    --> This PC --> Properties --> Advanced System Settings --> Computer Name
+   - DNS Name
+   \   --> Control Panel --> Network & Internet --> Network and Sharing Center --> Ethernet --> Properties
     
