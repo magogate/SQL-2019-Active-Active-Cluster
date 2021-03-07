@@ -16,4 +16,9 @@ In this video series we are going to see how to configure SQL Server 2019 Active
 # Configuring Windows Server Cluster
 Very first step in configuring SQL Server 2019 cluster is to have Windows Cluster first. Now there are many steps involved while creating Windows Cluster itself. Following are the steps which you can follow in-order to configure Windows Server Cluster
 
-## 1. Creating Domain Controller 
+## 1. Configuring Domain Controller 
+1. Install Windows Server 2019 by creating a Virtual Machine
+2. Change machine name to
+3. Allocate 
+    a. IP Address
+    b. DNS Name
