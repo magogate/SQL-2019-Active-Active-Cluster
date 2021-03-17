@@ -30,5 +30,6 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
            - Preferred DNS Server : 192.168.80.10 [Same for all VMs] (https://www.cloudflare.com/learning/dns/what-is-a-dns-server/)
            - Alternet DNS Server : 192.168.80.2 
    #### Disable Firewall
+        1. Control Panel --> System and Security --> Windows Defender Firewall --> Turn Off Windows Defender Firewall
 ### Domain Controller Configurations   
     
