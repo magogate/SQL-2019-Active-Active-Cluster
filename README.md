@@ -23,11 +23,11 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
    #### Computer Name 
         1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-dc-1)
    #### IP Addresses
-        1. Control Panel --> Network & Internet --> Network and Sharing Center --> Ethernet0 --> Properties --> Internet Protocol Verstion 4 (TCP/IPv4)
-           - IP Address
-           - Subnet Mask
-           - Default Gateway
-           - [Preferred DSN Server](https://www.cloudflare.com/learning/dns/what-is-a-dns-server/)
-           - Alternet DSN Server
+        1. Control Panel --> Network & Internet --> Network and Sharing Center --> Ethernet0 --> Properties --> Internet Protocol Verstion 4 --> (TCP/IPv4)
+           - IP Address : 192.168.80.10
+           - Subnet Mask : 255.255.255.0
+           - Default Gateway : 192.168.80.2
+           - Preferred DSN Server : 192.168.80.10 (https://www.cloudflare.com/learning/dns/what-is-a-dns-server/)
+           - Alternet DSN Server : 192.168.80.2
    
     
