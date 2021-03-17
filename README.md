@@ -27,7 +27,7 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
            - IP Address
            - Subnet Mask
            - Default Gateway
-           - Preferred DSN Server
+           - [Preferred DSN Server](https://www.cloudflare.com/learning/dns/what-is-a-dns-server/)
            - Alternet DSN Server
    
     
