@@ -31,15 +31,15 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
            - Alternet DNS Server : 192.168.80.2 
    #### Disable Firewall
         1. Control Panel --> System and Security --> Windows Defender Firewall --> Turn Off Windows Defender Firewall
-### 2. Domain Controller Configurations   
-#### Installation of Active Directory
+## 2. Domain Controller Configurations   
+### Installation of Active Directory
     1. Open Server Manager
     2. Local Server --> Manage --> Add Roles & Features
     3. Installation Type --> Role Based Installation
     4. Select local server - this is a default option
     5. Server Roles --> Select - Active Directory Domain Services 
     6. Install
-#### Configuring Active Directory
+### Configuring Active Directory
     1. Click on AD-DS Role at Server Manager
     2. Click More
     3. Select Action - Promote server to domain controller
@@ -52,5 +52,5 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
     10. Paths - Keep it default
     11. Install
     12. Restart & Login with Doamin User this time
-#### Validating Active Directory 
+### Validating Active Directory 
     1. Open "Active Directory Users and Computers"
