@@ -32,7 +32,7 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
    #### Disable Firewall
         1. Control Panel --> System and Security --> Windows Defender Firewall --> Turn Off Windows Defender Firewall
 ### 2. Domain Controller Configurations   
-#### Installation
+#### Installation of Active Directory
     1. Open Server Manager
     2. Local Server --> Manage --> Add Roles & Features
     3. Installation Type --> Role Based Installation
