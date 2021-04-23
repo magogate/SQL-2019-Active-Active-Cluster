@@ -68,11 +68,11 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
         1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-node-1)
    #### IP Addresses
         1. Control Panel --> Network & Internet --> Network and Sharing Center --> Ethernet0 --> Properties --> Internet Protocol Verstion 4 --> (TCP/IPv4)
-           - Static IP Address : 192.168.80.10 (https://www.paessler.com/it-explained/ip-address) & (https://www.rapidtables.com/convert/number/binary-to-decimal.html)
+           - Static IP Address : 192.168.80.15 (https://www.paessler.com/it-explained/ip-address) & (https://www.rapidtables.com/convert/number/binary-to-decimal.html)
            - Subnet Mask : 255.255.255.0 (https://www.paessler.com/it-explained/ip-address)
            - Default Gateway : 192.168.80.2 [Same for all VMs] (https://en.wikipedia.org/wiki/Default_gateway)
            - Preferred DNS Server : 192.168.80.10 [Same for all VMs] (https://www.cloudflare.com/learning/dns/what-is-a-dns-server/)
-           - Alternet DNS Server : 192.168.80.2 
+           - Alternet DNS Server : Keep blank 
    #### Disable Firewall
         1. Control Panel --> System and Security --> Windows Defender Firewall --> Turn Off Windows Defender Firewall
  ### Installation of node-2
@@ -83,10 +83,10 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
         1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-node-2)
    #### IP Addresses
         1. Control Panel --> Network & Internet --> Network and Sharing Center --> Ethernet0 --> Properties --> Internet Protocol Verstion 4 --> (TCP/IPv4)
-           - Static IP Address : 192.168.80.10 (https://www.paessler.com/it-explained/ip-address) & (https://www.rapidtables.com/convert/number/binary-to-decimal.html)
+           - Static IP Address : 192.168.80.20 (https://www.paessler.com/it-explained/ip-address) & (https://www.rapidtables.com/convert/number/binary-to-decimal.html)
            - Subnet Mask : 255.255.255.0 (https://www.paessler.com/it-explained/ip-address)
            - Default Gateway : 192.168.80.2 [Same for all VMs] (https://en.wikipedia.org/wiki/Default_gateway)
            - Preferred DNS Server : 192.168.80.10 [Same for all VMs] (https://www.cloudflare.com/learning/dns/what-is-a-dns-server/)
-           - Alternet DNS Server : 192.168.80.2 
+           - Alternet DNS Server : Keep blank
    #### Disable Firewall
         1. Control Panel --> System and Security --> Windows Defender Firewall --> Turn Off Windows Defender Firewall
