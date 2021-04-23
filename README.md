@@ -63,7 +63,7 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
 ### Installation of node-1
 1. Install Windows Server 2019 by creating a Virtual Machine
 2. Change machine name 
-3. Allocate 
+3. Allocate IP Address
    #### Computer Name 
         1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-node-1)
    #### IP Addresses
@@ -78,7 +78,7 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
  ### Installation of node-2
 1. Install Windows Server 2019 by creating a Virtual Machine
 2. Change machine name 
-3. Allocate 
+3. Allocate IP Address
    #### Computer Name 
         1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-node-2)
    #### IP Addresses
