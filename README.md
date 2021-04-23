@@ -1,4 +1,7 @@
 # SQL-2019-Active-Active-Cluster
+## Videos
+1. SQL Server 2019 Cluster - 2 : Configuring Active Directory Domain Controller https://youtu.be/oWJPw8WTW9c
+
 ### How to configure SQL Server 2019 Active / Active Cluster on Windows Server 2019 Cluster
 
 <img src="ActiveActiveSQLCluster.gif" alt="SQL Cluster">
