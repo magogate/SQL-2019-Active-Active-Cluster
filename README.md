@@ -65,7 +65,7 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
 2. Change machine name 
 3. Allocate 
    #### Computer Name 
-        1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-dc-1)
+        1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-node-1)
    #### IP Addresses
         1. Control Panel --> Network & Internet --> Network and Sharing Center --> Ethernet0 --> Properties --> Internet Protocol Verstion 4 --> (TCP/IPv4)
            - Static IP Address : 192.168.80.10 (https://www.paessler.com/it-explained/ip-address) & (https://www.rapidtables.com/convert/number/binary-to-decimal.html)
@@ -80,7 +80,7 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
 2. Change machine name 
 3. Allocate 
    #### Computer Name 
-        1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-dc-1)
+        1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-node-2)
    #### IP Addresses
         1. Control Panel --> Network & Internet --> Network and Sharing Center --> Ethernet0 --> Properties --> Internet Protocol Verstion 4 --> (TCP/IPv4)
            - Static IP Address : 192.168.80.10 (https://www.paessler.com/it-explained/ip-address) & (https://www.rapidtables.com/convert/number/binary-to-decimal.html)
