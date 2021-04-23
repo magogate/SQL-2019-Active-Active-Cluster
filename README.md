@@ -39,7 +39,7 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
     4. Select local server - this is a default option
     5. Server Roles --> Select - Active Directory Domain Services 
     6. Install
-### Configuring Active Directory
+### Configuring Active Directory Domain Service
     1. Click on AD-DS Role at Server Manager
     2. Click More
     3. Select Action - Promote server to domain controller
