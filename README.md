@@ -22,8 +22,8 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
 
 ## 1. Installation of Windows Server 2019 Server
 1. Install Windows Server 2019 by creating a Virtual Machine
-2. Change machine name to
-3. Allocate 
+2. Change machine name 
+3. Allocate IP Address
    #### Computer Name 
         1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-dc-1)
    #### IP Addresses
@@ -58,3 +58,35 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
     12. Restart & Login with Doamin User this time
 ### Validating Active Directory 
     1. Open "Active Directory Users and Computers"
+
+## 3. Installation of 2 Nodes
+### Installation of node-1
+1. Install Windows Server 2019 by creating a Virtual Machine
+2. Change machine name 
+3. Allocate 
+   #### Computer Name 
+        1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-dc-1)
+   #### IP Addresses
+        1. Control Panel --> Network & Internet --> Network and Sharing Center --> Ethernet0 --> Properties --> Internet Protocol Verstion 4 --> (TCP/IPv4)
+           - Static IP Address : 192.168.80.10 (https://www.paessler.com/it-explained/ip-address) & (https://www.rapidtables.com/convert/number/binary-to-decimal.html)
+           - Subnet Mask : 255.255.255.0 (https://www.paessler.com/it-explained/ip-address)
+           - Default Gateway : 192.168.80.2 [Same for all VMs] (https://en.wikipedia.org/wiki/Default_gateway)
+           - Preferred DNS Server : 192.168.80.10 [Same for all VMs] (https://www.cloudflare.com/learning/dns/what-is-a-dns-server/)
+           - Alternet DNS Server : 192.168.80.2 
+   #### Disable Firewall
+        1. Control Panel --> System and Security --> Windows Defender Firewall --> Turn Off Windows Defender Firewall
+ ### Installation of node-2
+1. Install Windows Server 2019 by creating a Virtual Machine
+2. Change machine name 
+3. Allocate 
+   #### Computer Name 
+        1. This PC --> Properties --> Advanced System Settings --> Computer Name (gogate-dc-1)
+   #### IP Addresses
+        1. Control Panel --> Network & Internet --> Network and Sharing Center --> Ethernet0 --> Properties --> Internet Protocol Verstion 4 --> (TCP/IPv4)
+           - Static IP Address : 192.168.80.10 (https://www.paessler.com/it-explained/ip-address) & (https://www.rapidtables.com/convert/number/binary-to-decimal.html)
+           - Subnet Mask : 255.255.255.0 (https://www.paessler.com/it-explained/ip-address)
+           - Default Gateway : 192.168.80.2 [Same for all VMs] (https://en.wikipedia.org/wiki/Default_gateway)
+           - Preferred DNS Server : 192.168.80.10 [Same for all VMs] (https://www.cloudflare.com/learning/dns/what-is-a-dns-server/)
+           - Alternet DNS Server : 192.168.80.2 
+   #### Disable Firewall
+        1. Control Panel --> System and Security --> Windows Defender Firewall --> Turn Off Windows Defender Firewall
