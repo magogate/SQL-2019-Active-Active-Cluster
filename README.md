@@ -119,7 +119,7 @@ Now, in order to create & share \ present these drives (iscasi luns) to other no
         5. Server Roles --> Select - File & Storage Services --> iSCSI Target Server
         6. Install        
 ### b. Add NIC Cards to all 3 nodes in network for iSCSI communication
-        1. Right click on VM --> Settings
+        1. Player --> Manage --> Virtual Machine Settings
         2. Click Add --> Select Network Adapter
         3. Assign static IP Address for all 3 nodes as below
            - for DC             -- 10.0.0.10
