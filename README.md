@@ -92,7 +92,7 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
    #### Disable Firewall
         1. Control Panel --> System and Security --> Windows Defender Firewall --> Turn Off Windows Defender Firewall
 
-## 1. Adding nodes to Domain
+## 4. Adding nodes to Domain
 1. Validate if you can ping to Domain from both the nodes - ping gogates.local
 2. Assign domain name for both nodes 
    - This PC --> Properties --> Advanced System Settings --> Member Of Domain - gogates.local
@@ -101,3 +101,30 @@ Very first step in configuring SQL Server 2019 cluster is to have Windows Cluste
    - Follow same steps for both nodes
    - While logging you should be able to login as Domain Administrator user instead of local Administrator
    - Validate nodes in Domain Controller using "Active Directory Users and Computers"
+
+## 5. Installation of iScassi Target
+As mentioned in very first video and also in image, DC Server / Node will also act as Storage or SAN. We will create 6 drives there as below
+2 Data Drives (5 GB Each)
+2 Log Drives (3 GB Each)
+1 Temp Drives (2 GB Each)
+
+These drives will share with other nodes, wherein we will actually install & configure SQL Server 2019 Active \ Active Cluster.
+
+Now, in order to create & share \ present these drives (iscasi luns) to other nodes, we need to follow following steps
+    ### a. Installation of iSCSI Target Server
+        1. Open Server Manager
+        2. Local Server --> Manage --> Add Roles & Features
+        3. Installation Type --> Role Based Installation
+        4. Select local server - this is a default option
+        5. Server Roles --> Select - File & Storage Services --> iSCSI Target Server
+        6. Install        
+    ### b. Add NIC Cards to all 3 nodes in network for iSCSI communication
+        1. Right click on VM --> Settings
+        2. Click Add --> Select Network Adapter
+        3. Assign static IP Address for all 3 nodes as below
+           - for DC             -- 10.0.0.10
+           - for gogate-node-1  -- 10.0.0.15
+           - for gogate-node-2  -- 10.0.0.20
+        4. Disable Windows Firewall
+        5. Check the connectivity from DC
+    
