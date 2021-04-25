@@ -111,14 +111,14 @@ As mentioned in very first video and also in image, DC Server / Node will also a
 These drives will share with other nodes, wherein we will actually install & configure SQL Server 2019 Active \ Active Cluster.
 
 Now, in order to create & share \ present these drives (iscasi luns) to other nodes, we need to follow following steps
-    ### a. Installation of iSCSI Target Server
+### a. Installation of iSCSI Target Server
         1. Open Server Manager
         2. Local Server --> Manage --> Add Roles & Features
         3. Installation Type --> Role Based Installation
         4. Select local server - this is a default option
         5. Server Roles --> Select - File & Storage Services --> iSCSI Target Server
         6. Install        
-    ### b. Add NIC Cards to all 3 nodes in network for iSCSI communication
+### b. Add NIC Cards to all 3 nodes in network for iSCSI communication
         1. Right click on VM --> Settings
         2. Click Add --> Select Network Adapter
         3. Assign static IP Address for all 3 nodes as below
