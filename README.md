@@ -109,6 +109,7 @@ As mentioned in very first video and also in image, DC Server / Node will also a
 1. 2 Data Drives (5 GB Each) - Data01 & Data02
 2. 2 Log Drives (3 GB Each) - Log01 & Log02
 3. 2 Temp Drives (2 GB Each) - Temp01 & Temp02
+4. Quorum Drive (1 GB)
 
 These drives will share with other nodes, wherein we will actually install & configure SQL Server 2019 Active \ Active Cluster.
 
