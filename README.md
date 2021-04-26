@@ -131,3 +131,12 @@ Now, in order to create & share \ present these drives (iscasi luns) to other no
         4. Disable Windows Firewall
         5. Check the connectivity from DC
     
+### c. Creating Shared Disks on Domain Controller
+        1. Open Server Manager
+        2. Select "File & Storage Services"
+        3. Select "iSCSI"
+        4. Tasks --> "New iSCSI Virtual Disk"
+        5. Specify Disk Name
+        6. Specify Disk Size
+        7. Add Target IP Address 10.0.0.15 & 10.0.0.20
+        8. Repeat process for all drives which needs to be added
