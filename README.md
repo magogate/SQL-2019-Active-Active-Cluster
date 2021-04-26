@@ -3,6 +3,8 @@
 1. SQL Server 2019 Cluster - 1 : Installation of Win Server 2019 https://youtu.be/xJ_WJ_p0qjk
 2. SQL Server 2019 Cluster - 2 : Configuring Active Directory Domain Controller https://youtu.be/oWJPw8WTW9c
 3. SQL Server 2019 Cluster - 3 : Configuring of Node1 & Node2 https://youtu.be/LYLVX24hPg8
+4. SQL Server 2019 Cluster - 4 : Adding nodes to Domain https://youtu.be/x54OX4iRjdg
+5. SQL Server 2019 Cluster - 5 : Installation of iScassi Target https://youtu.be/0JyKAa58zsk
 
 ### How to configure SQL Server 2019 Active / Active Cluster on Windows Server 2019 Cluster
 
