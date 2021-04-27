@@ -169,4 +169,4 @@ Now, in order to create & share \ present these drives (iscasi luns) to other no
         18. Right click on each drive --> Select "Change Drive Letter" & match it exactly what we had given for Node1
 
 
-## 4. Configuring Windows Cluster
+## 6. Configuring Windows Cluster
