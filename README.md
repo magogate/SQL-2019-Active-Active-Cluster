@@ -148,22 +148,24 @@ Now, in order to create & share \ present these drives (iscasi luns) to other no
         3. Click on Volumes & Devices --> Auto Configure
         4. To format disk - Open "Disk Management"
         5. Select disks and make online (Right click on each disk)
-        6. Click on Drive (once its online) & click "New Simple Volume"
-        7. Specify Drive Letter
-        8. Specify following settings
+        6. Once its online -- right click --> Initialize Disk
+        7. Select "GPT - GUID Partition Table" --> 
+        8. Click on Drive (once its online) & click "New Simple Volume"
+        9. Specify Drive Letter
+        10. Specify following settings
            - File System - NTFS
            - Allocation Unit Size -- 64 KB (https://blog.sqlserveronline.com/2017/12/08/sql-server-64kb-allocation-unit-size/)
            - Volume Label
            - Select "Perform Quick Format"
            - Finish
-        9. Repeat same for all available drives
-        10. Once node-1 configuration is finished, make all drives offline
-        11. Open "iSCSI Initiator" on 2nd node
-        12. Specify target - 10.0.0.10
-        13. Click on Volumes & Devices --> Auto Configure
-        14. Open "Disk Management"
-        15. Select disks and make online (Right click on each disk)
-        16. Right click on each drive --> Select "Change Drive Letter" & match it exactly what we had given for Node1
+        11. Repeat same for all available drives
+        12. Once node-1 configuration is finished, make all drives offline
+        13. Open "iSCSI Initiator" on 2nd node
+        14. Specify target - 10.0.0.10
+        15. Click on Volumes & Devices --> Auto Configure
+        16. Open "Disk Management"
+        17. Select disks and make online (Right click on each disk)
+        18. Right click on each drive --> Select "Change Drive Letter" & match it exactly what we had given for Node1
 
 
 ## 4. Configuring Windows Cluster
