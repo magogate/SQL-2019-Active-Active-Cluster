@@ -163,6 +163,7 @@ Now, in order to create & share \ present these drives (iscasi luns) to other no
         13. Click on Volumes & Devices --> Auto Configure
         14. Open "Disk Management"
         15. Select disks and make online (Right click on each disk)
+        16. Right click on each drive --> Select "Change Drive Letter" & match it exactly what we had given for Node1
 
 
 ## 4. Configuring Windows Cluster
