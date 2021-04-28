@@ -169,4 +169,36 @@ Now, in order to create & share \ present these drives (iscasi luns) to other no
         18. Right click on each drive --> Select "Change Drive Letter" & match it exactly what we had given for Node1
 
 
-## 6. Configuring Windows Cluster
+## 6. Installing & Configuring Windows Server 2019 Cluster
+As we discussed in very first video, in order to configure SQL Server 2019 Cluster we should first have Windows Server 2019 cluster. This Windows Cluster 2019 will be between gogate-node-1 & gogate-node-2, as Domain Controller node is not required now.
+### a. Add new Network Adapter Cards
+    1. First step of this process is to add 2 separate NIC Cards to each node
+    2. Assign IP Address to each of them as below
+       - gogate-node-1 - 172.16.0.15
+       - gogate-node-2 - 172.16.0.20
+    3. Disable Firewall
+    4. Restart both nodes
+### b. Install fail-over cluster feature on both nodes
+    1. Open Server Manager
+    2. Local Server --> Manage --> Add Roles & Features
+    3. Features --> Select "Failover Clustering"
+    4. Click "Add Features"
+    5. Install
+    6. Restart the machine
+    7. Do it for both the nodes
+### b. Configure Windows Cluster
+    1. Open "Failover Cluster Manager"
+    2. Select "Create Cluster"
+    3. Add both nodes gogate-node-1 & gogate-node-2
+    4. Perform validation by selecting all required tests
+    5. Validate the report and check the status 
+    6. Specify cluser name - WinServerCluster
+    7. Specify IP Address - 192.168.80.25
+    8. Select "Add all eligible storege to cluster"
+    9. Click Finish
+### c. Validate witness / quorum disk
+    1. Right click on "WinServerCluster" --> More Actions --> Configure Cluster Quorum Settings
+    2. Next --> select quorum witness
+    3. Configure a disk witness
+    4. Select witness disk (Q) from available disk
+### c. Validate Cluster Failover    
