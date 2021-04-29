@@ -8,6 +8,7 @@
 6. SQL Server 2019 Cluster - 6 : Creating Shared Storage Drives https://youtu.be/bYOgJdZEHns
 7. SQL Server 2019 Cluster - 7 : Configuring Shared Drives on other nodes https://youtu.be/wvnI9Hk1lHM
 8. SQL Server 2019 Cluster - 8 : Installing fail-over cluster feature https://youtu.be/IFT9SbSEM9g
+9. SQL Server 2019 Cluster - 9 : Configuring Windows Server Failover Cluster https://youtu.be/kbZJg_LvOsE
 
 ### How to configure SQL Server 2019 Active / Active Cluster on Windows Server 2019 Cluster
 
