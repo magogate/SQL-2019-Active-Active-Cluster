@@ -187,7 +187,7 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     5. Install
     6. Restart the machine
     7. Do it for both the nodes
-### b. Configure Windows Cluster
+### c. Configure Windows Cluster
     1. Open "Failover Cluster Manager"
     2. Select "Create Cluster"
     3. Add both nodes gogate-node-1 & gogate-node-2
@@ -197,9 +197,9 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     7. Specify IP Address - 192.168.80.25
     8. Select "Add all eligible storege to cluster"
     9. Click Finish
-### c. Validate witness / quorum disk
+### d. Validate witness / quorum disk
     1. Right click on "WinServerCluster" --> More Actions --> Configure Cluster Quorum Settings
     2. Next --> select quorum witness
     3. Configure a disk witness
     4. Select witness disk (Q) from available disk
-### c. Validate Cluster Failover    
+### e. Validate Cluster Failover    
