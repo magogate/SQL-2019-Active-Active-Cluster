@@ -204,3 +204,8 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     3. Configure a disk witness
     4. Select witness disk (Q) from available disk
 ### e. Validate Cluster Failover    
+
+## 7. SQL Server 2019 Installation - Prerequisite
+
+### a. Creating Service Accounts
+    
