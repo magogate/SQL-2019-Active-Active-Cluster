@@ -208,9 +208,10 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
 ## 7. SQL Server 2019 Installation - Prerequisite
 
 ### a. Creating Service Accounts
-    1. Create AD Group "SQL PRD ADMIN" for all Admins, and give Domain Admin or Local Admin access to this group.
-    2. Add individual Domain Accounts to "SQL PROD ADMIN". e.g. Add gogates\magogate or gogates\dgogate to group "SQL PRD ADMIN"
-    3. Create separate Service Accounts for each SQL Service as below
+    1. Open "Active Directory Users and Computers"
+    2. Create AD Group "SQL PRD ADMIN" for all Admins, and give Domain Admin or Local Admin access to this group.
+    3. Add individual Domain Accounts to "SQL PROD ADMIN". e.g. Add gogates\magogate or gogates\dgogate to group "SQL PRD ADMIN"
+    4. Create separate Service Accounts for each SQL Service as below
        - SQL.PRD.SERVER
        - SQL.PRD.AGENT   
        
@@ -225,3 +226,6 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     2. How to read "Crystal Disk" results - https://www.brentozar.com/archive/2012/03/how-fast-your-san-or-how-slow/
     3. Use Microsoft DiskSpd from - https://docs.microsoft.com/en-us/azure-stack/hci/manage/diskspd-overview
 
+### c. Changing to CSVFS (Cluster Shared Volume File System) format
+    1. Why its needed?
+    2. More information on https://docs.microsoft.com/en-us/windows-server/failover-clustering/failover-cluster-csvs
