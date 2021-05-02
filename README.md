@@ -222,5 +222,6 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
 
 ### c. Benchmarking LUNs or Speed Checks of Shared Drives
     1. Download & Install "Crystal Disk" software from https://osdn.net/projects/crystaldiskmark/downloads/71859/CrystalDiskMark7_0_0h.exe/
-    2. Use Microsoft DiskSpd from - https://docs.microsoft.com/en-us/azure-stack/hci/manage/diskspd-overview
+    2. How to read "Crystal Disk" results - https://www.brentozar.com/archive/2012/03/how-fast-your-san-or-how-slow/
+    3. Use Microsoft DiskSpd from - https://docs.microsoft.com/en-us/azure-stack/hci/manage/diskspd-overview
 
