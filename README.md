@@ -229,6 +229,8 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     2. How to read "Crystal Disk" results - https://www.brentozar.com/archive/2012/03/how-fast-your-san-or-how-slow/
     3. Use Microsoft DiskSpd from - https://docs.microsoft.com/en-us/azure-stack/hci/manage/diskspd-overview
 
-### c. Changing to CSVFS (Cluster Shared Volume File System) format
-    1. Why its needed?
-    2. More information on https://docs.microsoft.com/en-us/windows-server/failover-clustering/failover-cluster-csvs
+### d. Changing to CSVFS (Cluster Shared Volume File System) format
+    1. Sharing Disks between 2 nodes
+       - bring disk offline from one node and online to different node       - 
+    3. or instead use CSVFS - Why its needed?
+    4. More information on https://docs.microsoft.com/en-us/windows-server/failover-clustering/failover-cluster-csvs
