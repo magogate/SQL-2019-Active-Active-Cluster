@@ -220,7 +220,7 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
        
 ### b. Grant Windows Rights to SQL Server Service account
     1. Open "Local Group Policy Editor"
-    2. Add above listed SA accounts to following listing
+    2. Add above listed SA accounts to following listing - https://www.sqlshack.com/perform-volume-maintenance-tasks-security-policy/
        - Perform volume maintenance tasks
        - Lock pages in memory
 
