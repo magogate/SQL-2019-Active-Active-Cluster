@@ -208,4 +208,19 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
 ## 7. SQL Server 2019 Installation - Prerequisite
 
 ### a. Creating Service Accounts
-    
+    1. Create AD Group "SQL PRD ADMIN" for all Admins, and give Domain Admin or Local Admin access to this group.
+    2. Add individual Domain Accounts to "SQL PROD ADMIN". e.g. Add gogates\magogate or gogates\dgogate to group "SQL PRD ADMIN"
+    3. Create separate Service Accounts for each SQL Service as below
+       - SQL.PRD.SERVER
+       - SQL.PRD.AGENT   
+       
+### b. Grant Windows Rights to SQL Server Service account
+    1. Open "Local Group Policy Editor"
+    2. Add above listed SA accounts to following listing
+       - Perform volume maintenance tasks
+       - Lock pages in memory
+
+### c. Benchmarking LUNs or Speed Checks of Shared Drives
+    1. Download & Install "Crystal Disk" software from https://osdn.net/projects/crystaldiskmark/downloads/71859/CrystalDiskMark7_0_0h.exe/
+    2. Use Microsoft DiskSpd from - https://docs.microsoft.com/en-us/azure-stack/hci/manage/diskspd-overview
+
