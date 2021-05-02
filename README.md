@@ -211,7 +211,10 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     1. Open "Active Directory Users and Computers"
     2. Create AD Group "SQL PRD ADMIN" for all Admins, and give Domain Admin or Local Admin access to this group.
     3. Add individual Domain Accounts to "SQL PROD ADMIN". e.g. Add gogates\magogate or gogates\dgogate to group "SQL PRD ADMIN"
-    4. Create separate Service Accounts for each SQL Service as below
+    4. Make AD Group "SQL PRD ADMIN" as a Local Admin to each node
+       - Open "Edit Local Users and Groups"
+       - Under Groups section, select "Administrator" group and add "SQL PRD ADMIN" in it.
+    5. Create separate Service Accounts for each SQL Service as below
        - SQL.PRD.SERVER
        - SQL.PRD.AGENT   
        
