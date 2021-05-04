@@ -231,6 +231,9 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
 
 ### d. Changing to CSVFS (Cluster Shared Volume File System) format
     1. Sharing Disks between 2 nodes
-       - bring disk offline from one node and online to different node       - 
+       - Open Administrative Tools --> Failover Cluster Manager
+       - Create 2 Empty Roles - Node1 & Node2
+       - Assign Preferred Owner as Node1, Node2 & vice versa       
+       - Assign Storage to each node
     3. or instead use CSVFS - Why its needed?
     4. More information on https://docs.microsoft.com/en-us/windows-server/failover-clustering/failover-cluster-csvs
