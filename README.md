@@ -266,5 +266,21 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
        - Instance Root Directory - C:\Program Files\Microsoft SQL Server\
        - Shared Feature Directory - C:\Program Files\Microsoft SQL Server\
        - Shared Feature Directory (x86) - C:\Program Files (x86)\Microsoft SQL Server\
-    6. Specify Instance Name - 
-     
+    6. Specify Instance Name - dgogate
+    7. Specify Service Accounts & Change startup type to Automatic
+       - SQL Server Agent - SQL.PRD.AGENT & Specify Password
+       - SQL Server Database Engine - SQL.PRD.SERVER & Specify Password
+       - Select "Grant Perform Volume Maintenance Tasks privileges to SQL Server Database Engine Services"
+    8. Select "Mixed Mode" Authentication
+       - Specify password for SA account as "P@ssword#123"
+       - Add group "SQL PRD ADMIN" as SQL Administrator
+    9. Specify Data Directories     
+       - Select data root directory as "C:\ClusterStorage\Volume1"
+       - Select User database directory as "C:\ClusterStorage\Volume1\MSSQL15.DGOGATE\MSSQL\Data"
+       - Select User database log directory as "C:\ClusterStorage\Volume3\MSSQL15.DGOGATE\MSSQL\Data"
+    10. Temp DB
+        - As per microsoft documentation "The number of secondary data files depends on the number of (logical) processors on the machine. As a general rule, if the number of logical processors is less than or equal to eight, use the same number of data files as logical processors. If the number of logical processors is greater than eight, use eight data files. Then if contention continues, increase the number of data files by multiples of four until the contention decreases to acceptable levels, or make changes to the workload/code." which is available as below
+        - https://docs.microsoft.com/en-us/sql/relational-databases/databases/tempdb-database?view=sql-server-ver15
+        - 
+       
+    
