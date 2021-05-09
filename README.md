@@ -257,3 +257,14 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
        - Click download
     3. Once download finishes, copy ISO image to respective node where you want to install SQL Server
     4. Click on ISO, and you can start SQL Server Installation by running Setup.exe
+3. Installation Steps
+    1. Choose "Installation" --> "New SQL Server Standalone Installation Or Add Features to existing installation"
+    2. Specify Edition --> (Developer)
+    3. Accept Lincese Aggregement
+    4. Feature Selection - We are not going to install only "Database Engine Service".
+    5. Select installation directories as follows
+       - Instance Root Directory - C:\Program Files\Microsoft SQL Server\
+       - Shared Feature Directory - C:\Program Files\Microsoft SQL Server\
+       - Shared Feature Directory (x86) - C:\Program Files (x86)\Microsoft SQL Server\
+    6. Specify Instance Name - 
+     
