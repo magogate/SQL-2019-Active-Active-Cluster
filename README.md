@@ -295,5 +295,8 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
         - Since we have total 2 GB avilable for VM, change max memory to 1024 MB / 1 GB
         - Select "Click here to accept the recommended memory configurations for the SQL Server Database Engine"
         - More information is available at https://www.mssqltips.com/sqlservertip/6211/sql-server-2019-installation-enhancements-for-maxdop-and-max-memory/
+    13. FileStream
+        - This is required if you are going to use un-structured data. we will ignore this
+        - https://docs.microsoft.com/en-us/sql/relational-databases/blob/filestream-sql-server?view=sql-server-ver15
        
     
