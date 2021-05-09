@@ -249,3 +249,7 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     2. Or Open task manager --> Open Resoure Monitor --> Click on CPU
     3. Or Advanced System Settings --> Hardware --> Device Manager --> Processors
 2. Download SQL Server Developer Edition from https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+    1. Once download, run the installer and choose "Download Media" option
+    2. Select following options on next screen
+       - Choose ISO image for download
+       - Location as G:\Softwares\SQLServer2019
