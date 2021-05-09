@@ -240,3 +240,12 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
        - Assign Storage to each node
     3. or instead use CSVFS - Why its needed?
     4. More information on https://docs.microsoft.com/en-us/windows-server/failover-clustering/failover-cluster-csvs
+
+## 8. SQL Server 2019 Installation 
+1. SQL Server Editions & Licencing 
+    https://download.microsoft.com/download/6/6/0/66078040-86d8-4f6e-b0c5-e9919bbcb537/SQL%20Server%202019%20Licensing%20guide.pdf
+    You can validate the code by
+    1. Control Panel\System and Security\System and check Processors
+    2. Or Open task manager --> Open Resoure Monitor --> Click on CPU
+    3. Or Advanced System Settings --> Hardware --> Device Manager --> Processors
+2. Download SQL Server Developer Edition from https://www.microsoft.com/en-us/sql-server/sql-server-downloads
