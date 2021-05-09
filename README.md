@@ -298,5 +298,6 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     13. FileStream
         - This is required if you are going to use un-structured data. we will ignore this
         - https://docs.microsoft.com/en-us/sql/relational-databases/blob/filestream-sql-server?view=sql-server-ver15
+    14. Click Next & the Install
        
     
