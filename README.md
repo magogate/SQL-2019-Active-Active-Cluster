@@ -282,17 +282,17 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
        - Specify password for SA account as "P@ssword#123"
        - Add group "SQL PRD ADMIN" as SQL Administrator
     10. Specify Data Directories     
-       - Select data root directory as "C:\ClusterStorage\Volume1"
-       - Select User database directory as "C:\ClusterStorage\Volume1\MSSQL15.DGOGATE\MSSQL\Data"
-       - Select User database log directory as "C:\ClusterStorage\Volume3\MSSQL15.DGOGATE\MSSQL\Data"
+       - Select data root directory as "C:\ClusterStorage\Volume1\MSSQL\Data01"
+       - Select User database directory as "C:\ClusterStorage\Volume1\MSSQL\Data01\MSSQL15.DGOGATE\MSSQL\Data"
+       - Select User database log directory as "C:\ClusterStorage\Volume3\MSSQL\Log01\MSSQL15.DGOGATE\MSSQL\Data"
     11. Temp DB
         - As per microsoft documentation "The number of secondary data files depends on the number of (logical) processors on the machine. As a general rule, if the number of logical processors is less than or equal to eight, use the same number of data files as logical processors. If the number of logical processors is greater than eight, use eight data files. Then if contention continues, increase the number of data files by multiples of four until the contention decreases to acceptable levels, or make changes to the workload/code." which is available as below
         - https://docs.microsoft.com/en-us/sql/relational-databases/databases/tempdb-database?view=sql-server-ver15
         - Since in our case - logical processors are 2, SQL installer intelligently took "No. of Files" as 2        
         - What Size you would select? check that at https://www.brentozar.com/archive/2016/01/cheat-sheet-how-to-configure-tempdb-for-microsoft-sql-server/
         - Since we are going to have 3 GB of Temp drive for each node, select "Initial Size (MB)" as 1 GB (1024 MB)
-        - Select data directory as - C:\ClusterStorage\Volume5
-        - Select log directory as - C:\ClusterStorage\Volume3
+        - Select data directory as - C:\ClusterStorage\Volume5\MSSQL\Temp01
+        - Select log directory as - C:\ClusterStorage\Volume3\MSSQL\Log01\MSSQL15.DGOGATE\MSSQL\Data
         - Keep "Temp log file Size configuration" as default
     12. MaxDOP
         - Total no of logical processors we have are 2 so based on that it got selected as 2 by default. Please see documentation as below
@@ -306,7 +306,7 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
         - This is required if you are going to use un-structured data. we will ignore this
         - https://docs.microsoft.com/en-us/sql/relational-databases/blob/filestream-sql-server?view=sql-server-ver15
     15. Click Next & the Install
-    16. Installation will fail with error as below
+    16. Installation will fail with error as below if you specify Temp directory directly as C:\ClusterStorage\Volume3. So, make sure you will create directory inside a drive before installation
         "Updating permission settings for folder "C:\ClusterStorage\Volume3" failed. Please check blog - https://blog.sqlauthority.com/2017/11/11/sql-server-installation-error-updating-permission-setting-file-failed/
     17. Cancel installation, create a new directory under Volume3 and re-start installation
        
