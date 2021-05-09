@@ -243,8 +243,8 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
 
 ## 8. SQL Server 2019 Installation 
 1. SQL Server Editions & Licencing 
-    https://download.microsoft.com/download/6/6/0/66078040-86d8-4f6e-b0c5-e9919bbcb537/SQL%20Server%202019%20Licensing%20guide.pdf
-    You can validate the code by
+    https://download.microsoft.com/download/6/6/0/66078040-86d8-4f6e-b0c5-e9919bbcb537/SQL%20Server%202019%20Licensing%20guide.pdf <br>
+    You can validate the cores by
     1. Control Panel\System and Security\System and check Processors
     2. Or Open task manager --> Open Resoure Monitor --> Click on CPU
     3. Or Advanced System Settings --> Hardware --> Device Manager --> Processors
