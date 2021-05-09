@@ -11,6 +11,7 @@
 9. SQL Server 2019 Cluster - 9 : Configuring Windows Server Failover Cluster https://youtu.be/kbZJg_LvOsE
 10. SQL Server 2019 Cluster - 10 : Creating Service Accounts and Local Admins https://youtu.be/XQblyu-wgWc
 11. SQL Server 2019 Cluster - 11 : Configuring Roles & CSVFS for LUNs https://youtu.be/o0UbJ0gpKP8
+12. SQL Server 2019 Cluster - 12 : Disk Speed Check using Crystal Disk https://youtu.be/J_HFSEivNGc
 
 ### How to configure SQL Server 2019 Active / Active Cluster on Windows Server 2019 Cluster
 
