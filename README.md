@@ -273,7 +273,7 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
        - Instance Root Directory - C:\Program Files\Microsoft SQL Server\
        - Shared Feature Directory - C:\Program Files\Microsoft SQL Server\
        - Shared Feature Directory (x86) - C:\Program Files (x86)\Microsoft SQL Server\
-    7. Specify Instance Name - dgogate
+    7. Specify Named Instance Name - dgogate
     8. Specify Service Accounts & Change startup type to Automatic
        - SQL Server Agent - SQL.PRD.AGENT & Specify Password
        - SQL Server Database Engine - SQL.PRD.SERVER & Specify Password
