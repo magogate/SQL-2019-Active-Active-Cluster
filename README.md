@@ -281,6 +281,19 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     10. Temp DB
         - As per microsoft documentation "The number of secondary data files depends on the number of (logical) processors on the machine. As a general rule, if the number of logical processors is less than or equal to eight, use the same number of data files as logical processors. If the number of logical processors is greater than eight, use eight data files. Then if contention continues, increase the number of data files by multiples of four until the contention decreases to acceptable levels, or make changes to the workload/code." which is available as below
         - https://docs.microsoft.com/en-us/sql/relational-databases/databases/tempdb-database?view=sql-server-ver15
-        - 
+        - Since in our case - logical processors are 2, SQL installer intelligently took "No. of Files" as 2        
+        - What Size you would select? check that at https://www.brentozar.com/archive/2016/01/cheat-sheet-how-to-configure-tempdb-for-microsoft-sql-server/
+        - Since we are going to have 3 GB of Temp drive for each node, select "Initial Size (MB)" as 1 GB (1024 MB)
+        - Select data directory as - C:\ClusterStorage\Volume5
+        - Select log directory as - C:\ClusterStorage\Volume3
+        - Keep "Temp log file Size configuration" as default
+    11. MaxDOP
+        - Total no of logical processors we have are 2 so based on that it got selected as 2 by default. Please see documentation as below
+        - https://www.mssqltips.com/sqlservertip/6211/sql-server-2019-installation-enhancements-for-maxdop-and-max-memory/
+    12. Memory
+        - Click on "Recommended"
+        - Since we have total 2 GB avilable for VM, change max memory to 1024 MB / 1 GB
+        - Select "Click here to accept the recommended memory configurations for the SQL Server Database Engine"
+        - More information is available at https://www.mssqltips.com/sqlservertip/6211/sql-server-2019-installation-enhancements-for-maxdop-and-max-memory/
        
     
