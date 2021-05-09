@@ -253,3 +253,6 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     2. Select following options on next screen
        - Choose ISO image for download
        - Location as G:\Softwares\SQLServer2019
+       - Click download
+    3. Once download finishes, copy ISO image to respective node where you want to install SQL Server
+    4. Click on ISO, and you can start SQL Server Installation by running Setup.exe
