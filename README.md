@@ -311,4 +311,4 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
         "Updating permission settings for folder "C:\ClusterStorage\Volume3" failed. Please check blog - https://blog.sqlauthority.com/2017/11/11/sql-server-installation-error-updating-permission-setting-file-failed/
     17. Cancel installation, create a new directory under Volume3 and re-start installation
        
-    
+4. Download SSMS from https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15    
