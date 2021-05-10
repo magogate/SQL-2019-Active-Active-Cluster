@@ -293,7 +293,7 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
         - What Size you would select? check that at https://www.brentozar.com/archive/2016/01/cheat-sheet-how-to-configure-tempdb-for-microsoft-sql-server/
         - Since we are going to have 3 GB of Temp drive for each node, select "Initial Size (MB)" as 1 GB (1024 MB)
         - Select data directory as - C:\ClusterStorage\Volume5\MSSQL\Temp01
-        - Select log directory as - C:\ClusterStorage\Volume3\MSSQL\Log01\MSSQL15.DGOGATE\MSSQL\Data
+        - Select log directory as - C:\ClusterStorage\Volume5\MSSQL\Temp01
         - Keep "Temp log file Size configuration" as default
     12. MaxDOP
         - Total no of logical processors we have are 2 so based on that it got selected as 2 by default. Please see documentation as below
