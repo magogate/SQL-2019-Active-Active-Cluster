@@ -313,3 +313,7 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     17. Cancel installation, create a new directory under Volume3 and re-start installation
        
 4. Download SSMS from https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15    
+
+5. Installign failover cluster
+    1. Copy installer to 2nd node
+    2. Choose "Installation" --> "Add a node to SQL Server Failover Cluster"
