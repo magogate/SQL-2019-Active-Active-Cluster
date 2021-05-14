@@ -323,4 +323,11 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
 
 5. Installign failover cluster
     1. Copy installer to 2nd node
-    2. Choose "Installation" --> "Add a node to SQL Server Failover Cluster"
+    2. Choose "Installation" --> "Add a node to a SQL Server Failover Cluster"
+    3. Select "Developer" Edition
+    4. Accept "License Aggregement"
+    5. All validations should be Ok
+    6. Specify SQL Server Instance - in our case its a default instance, name of node2, Cluster Network Name (dgogate) & name of node1. This is all default and no need to modify anything here.
+    7. IP Address of SQL Instance will appear automatically
+    8. SQL Server & Agent Services and corresponding Service Accounts will appear; specify password. Select check box for volume maintenance task
+    9. Install
