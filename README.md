@@ -15,6 +15,7 @@
 13. SQL Server 2019 Cluster - 13 : Incensing & Downloading SQL Server 2019 https://youtu.be/wSVSmHa-v7E
 14. SQL Server 2019 Cluster - 14 : Installing SQL Server 2019 Cluster on Node1 https://youtu.be/QUaSwMJS1DI
 15. SQL Server 2019 Cluster - 15 : Installing SSMS and validate connectivity https://youtu.be/_VjDnhbzheI
+16. SQL Server 2019 Cluster - 16 : Adding a node to SQL Server Failover Cluster https://youtu.be/iKKNrrFbnzA
 
 ### How to configure SQL Server 2019 Active / Active Cluster on Windows Server 2019 Cluster
 
