@@ -282,7 +282,7 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     9. Specify SQL Server Network Name - dgogate 
     10. This will be used to connect to SQL Server, you can skip named instance and keep default instance
     11. Specify Disks which you want to allocate to that SQL Server instance. In our case Disk 1,3,5 are for first instance & Disk 2,4,6 are for second instance
-    12. Specify IP Address for SQL failover cluster - this has to be of same range \ network of your node - which is 192.168.80.<>
+    12. Specify IP Address for SQL failover cluster - this has to be of same range \ network of your node - which is 192.168.80.30
     13. Specify Service Accounts & Change startup type to Automatic
        - SQL Server Agent - SQL.PRD.AGENT & Specify Password
        - SQL Server Database Engine - SQL.PRD.SERVER & Specify Password
