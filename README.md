@@ -267,27 +267,34 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
        - C:\ClusterStorage\Volume4\MSSQL\Log02
        - C:\ClusterStorage\Volume5\MSSQL\Temp01
        - C:\ClusterStorage\Volume6\MSSQL\Temp02
-    2. Choose "Installation" --> "New SQL Server Standalone Installation Or Add Features to existing installation"
-    3. Specify Edition --> (Developer)
-    4. Accept Lincese Aggregement
-    5. Feature Selection - We are not going to install only "Database Engine Service".
-    6. Select installation directories as follows
+    2. Re-Name Network 
+       - Cluster Network 1 --> Cluster Nodes
+       - Cluster Network 2 --> Shared Drives
+       - Cluster Network 3 --> Heartbeat [This will verify if both nodes are up & running; if one of the node is down, it will start failover]
+    3. Choose "Installation" --> "New SQL Server Failover Cluster Installation"
+    4. Specify Edition --> (Developer)
+    6. Accept Lincese Aggregement
+    7. Feature Selection - We are going to install only "Database Engine Service".
+    8. Select installation directories as follows
        - Instance Root Directory - C:\Program Files\Microsoft SQL Server\
        - Shared Feature Directory - C:\Program Files\Microsoft SQL Server\
        - Shared Feature Directory (x86) - C:\Program Files (x86)\Microsoft SQL Server\
-    7. Specify Named Instance Name - dgogate
-    8. Specify Service Accounts & Change startup type to Automatic
+    9. Specify SQL Server Network Name - dgogate 
+    10. This will be used to connect to SQL Server, you can skip named instance and keep default instance
+    11. Specify Disks which you want to allocate to that SQL Server instance. In our case Disk 1,3,5 are for first instance & Disk 2,4,6 are for second instance
+    12. Specify IP Address for SQL failover cluster - this has to be of same range \ network of your node - which is 192.168.80.<>
+    13. Specify Service Accounts & Change startup type to Automatic
        - SQL Server Agent - SQL.PRD.AGENT & Specify Password
        - SQL Server Database Engine - SQL.PRD.SERVER & Specify Password
        - Select "Grant Perform Volume Maintenance Tasks privileges to SQL Server Database Engine Services"
-    9. Select "Mixed Mode" Authentication
+    14. Select "Mixed Mode" Authentication
        - Specify password for SA account as "P@ssword#123"
        - Add group "SQL PRD ADMIN" as SQL Administrator
-    10. Specify Data Directories     
+    15. Specify Data Directories     
        - Select data root directory as "C:\ClusterStorage\Volume1\MSSQL\Data01"
        - Select User database directory as "C:\ClusterStorage\Volume1\MSSQL\Data01\MSSQL15.DGOGATE\MSSQL\Data"
        - Select User database log directory as "C:\ClusterStorage\Volume3\MSSQL\Log01\MSSQL15.DGOGATE\MSSQL\Data"
-    11. Temp DB
+    16. Temp DB
         - As per microsoft documentation "The number of secondary data files depends on the number of (logical) processors on the machine. As a general rule, if the number of logical processors is less than or equal to eight, use the same number of data files as logical processors. If the number of logical processors is greater than eight, use eight data files. Then if contention continues, increase the number of data files by multiples of four until the contention decreases to acceptable levels, or make changes to the workload/code." which is available as below
         - https://docs.microsoft.com/en-us/sql/relational-databases/databases/tempdb-database?view=sql-server-ver15
         - Since in our case - logical processors are 2, SQL installer intelligently took "No. of Files" as 2        
@@ -296,19 +303,19 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
         - Select data directory as - C:\ClusterStorage\Volume5\MSSQL\Temp01
         - Select log directory as - C:\ClusterStorage\Volume5\MSSQL\Temp01
         - Keep "Temp log file Size configuration" as default
-    12. MaxDOP
+    17. MaxDOP
         - Total no of logical processors we have are 2 so based on that it got selected as 2 by default. Please see documentation as below
         - https://www.mssqltips.com/sqlservertip/6211/sql-server-2019-installation-enhancements-for-maxdop-and-max-memory/
-    13. Memory
+    18. Memory
         - Click on "Recommended"
         - Since we have total 2 GB avilable for VM, change max memory to 1024 MB / 1 GB
         - Select "Click here to accept the recommended memory configurations for the SQL Server Database Engine"
         - More information is available at https://www.mssqltips.com/sqlservertip/6211/sql-server-2019-installation-enhancements-for-maxdop-and-max-memory/
-    14. FileStream
+    19. FileStream
         - This is required if you are going to use un-structured data. we will ignore this
         - https://docs.microsoft.com/en-us/sql/relational-databases/blob/filestream-sql-server?view=sql-server-ver15
-    15. Click Next & the Install
-    16. Installation will fail with error as below if you specify Temp directory directly as C:\ClusterStorage\Volume3. So, make sure you will create directory inside a drive before installation
+    20. Click Next & the Install
+    21. Installation will fail with error as below if you specify Temp directory directly as C:\ClusterStorage\Volume3. So, make sure you will create directory inside a drive before installation
         "Updating permission settings for folder "C:\ClusterStorage\Volume3" failed. Please check blog - https://blog.sqlauthority.com/2017/11/11/sql-server-installation-error-updating-permission-setting-file-failed/
     17. Cancel installation, create a new directory under Volume3 and re-start installation
        
