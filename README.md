@@ -322,7 +322,7 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
        
 4. Download SSMS from https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15    
 
-5. Installign failover cluster
+5. Installing failover cluster
     1. Copy installer to 2nd node
     2. Choose "Installation" --> "Add a node to a SQL Server Failover Cluster"
     3. Select "Developer" Edition
@@ -332,3 +332,10 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     7. IP Address of SQL Instance will appear automatically
     8. SQL Server & Agent Services and corresponding Service Accounts will appear; specify password. Select check box for volume maintenance task
     9. Install
+    
+5. Validation of SQL Server failover cluster
+    1. Validate the ownership of LUNs / Disks - its not mandatory
+    2. Check blog - https://www.brentozar.com/archive/2012/02/introduction-sql-server-clusters/ to understand the problem
+    3. Create a Dummy database and create a table in that. Run a sql query to validate the data
+    4. Turn off one node
+    5. You should still be able to connect to SQL Server from 2nd node and execute same query
