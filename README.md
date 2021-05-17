@@ -334,8 +334,7 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     9. Install
     
 5. Validation of SQL Server failover cluster
-    1. Validate the ownership of LUNs / Disks - its not mandatory
-    2. Check blog - https://www.brentozar.com/archive/2012/02/introduction-sql-server-clusters/ to understand the problem
-    3. Create a Dummy database and create a table in that. Run a sql query to validate the data
-    4. Turn off one node
-    5. You should still be able to connect to SQL Server from 2nd node and execute same query
+    1. Validate the ownership of LUNs / Disks - its not mandatory    
+    2. Create a Dummy database and create a table in that. Run a sql query to validate the data
+    3. Turn off one node
+    4. You should still be able to connect to SQL Server from 2nd node and execute same query
