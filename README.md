@@ -339,3 +339,9 @@ As we discussed in very first video, in order to configure SQL Server 2019 Clust
     2. Create a Dummy database and create a table in that. Run a sql query to validate the data
     3. Turn off one node
     4. You should still be able to connect to SQL Server from 2nd node and execute same query
+
+6. Use Local SSD instead of Shared Drives / SAN for TempDB
+    1.  Create directories under C:\MSSQL\Temp01
+    2.  Move existing TempDB from Shared Drive to Local Drive
+        - How to move DBs from one drive to another? https://docs.microsoft.com/en-us/sql/relational-databases/databases/move-system-databases?view=sql-server-ver15
+    2.  Bring one of the node and validate
