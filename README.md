@@ -19,6 +19,7 @@
 17. SQL Server 2019 Cluster - 17 : Validating SQL Server Failover Cluster https://youtu.be/XR5ti7Ex3v8
 18. SQL Server 2019 Cluster - 18 : Configuring TempDB on local SSD instead of Shared Drive https://youtu.be/C3FGi3eS5pI
 19. SQL Server 2019 Cluster - 19 : Installing SQL Server 2019 Named Instance on Node2 https://youtu.be/qH3KxLXRqRQ
+20. SQL Server 2019 Cluster - 20 : Adding a node to SQL Server Failover Cluster https://youtu.be/bZnYEG1zEBY
 
 ### How to configure SQL Server 2019 Active / Active Cluster on Windows Server 2019 Cluster
 
